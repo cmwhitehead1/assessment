@@ -1,0 +1,30 @@
+.container-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    height: 490px;
+    width: 575px;
+    background-color: lavender;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  .first-col {
+    border-right: solid 1px black;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

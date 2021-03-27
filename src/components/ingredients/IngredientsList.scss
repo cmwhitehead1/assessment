@@ -1,0 +1,31 @@
+.ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .circle {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+  }
+
+  .selected {
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border: black 2px solid;
+    }
+  }
+}

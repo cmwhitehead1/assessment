@@ -30,18 +30,18 @@ const initialGlobalState: State = {
   selectedIngredientById: 0,
 }
 
-type Dispach = {
+type Dispatch = {
   type: string
   value: string | boolean | object
 }
 
 type IGlobalStateContext = State
-type DispachContext = React.Dispatch<React.SetStateAction<Dispach>>
+type DispatchContext = React.Dispatch<React.SetStateAction<Dispatch>>
 
 const GlobalStateContext = createContext<IGlobalStateContext>(
   initialGlobalState
 )
-const GlobalDispatchContext = createContext<DispachContext>(() => null)
+const GlobalDispatchContext = createContext<DispatchContext>(() => null)
 
 const reducer = (state: State, action: any) => {
   switch (action.type) {
